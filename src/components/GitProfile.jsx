@@ -122,7 +122,7 @@ const GitProfile = ({ config }) => {
       );
 
       if (error.response.status === 403) {
-        setError(tooManyRequestError(reset));
+        // setError(tooManyRequestError(reset));
       } else if (error.response.status === 404) {
         setError(notFoundError);
       } else {
